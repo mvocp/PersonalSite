@@ -65,7 +65,7 @@ export default function RootLayout({
   return (
     <html lang="zh">
       <body>
-
+      <script defer src="https://umami.imxb.de/script.js" data-website-id="48f86595-15d4-4cb8-9ab7-86b6a8483e0b"></script>
         {headbarD}
         <br></br>
         <Container>
