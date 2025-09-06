@@ -1,12 +1,9 @@
 import * as React from 'react';
-import { Card, CardContent} from '@mui/material';
+import './main.css';
 
 const mainCard=(
 
 <div>
-
-  <Card>
-    <CardContent>
       <h1>🎉YOU Discovered There!🎉</h1>
       <p>你好，我是LimitZ_！</p>
       <p>这里——limitz.top，是有关我的部分网站导航页，同时也作为个人自我介绍所用的单页网站。
@@ -24,8 +21,10 @@ const mainCard=(
         我用了两年255650.xyz，于2025年改启用limitz.top，这两个域名都会一直续费，直到我失去做网站的兴趣。
         <br></br>
         想说的也就这么多了，希望你可以去我的博客看看。
+        本网站尽力遵循SPA设计原则。
         THANK YOU.
-
+        <br />
+        <p className='colorRed'>有一个很糟糕的事，本站移动端适配比较烂，有一部分导航在屏幕外，麻烦请您自行滑动。</p>
       </p>
               <br />
         <h3>Contact :</h3>
@@ -33,9 +32,6 @@ const mainCard=(
         <p>邮箱：i@limitz.top</p>
         <p>QQ：66870019</p>
         <br />
-      <small> © 2020-2025 LimitZ_'s Space.建站五年纪念(2025)</small>
-    </CardContent>
-  </Card>
 
 </div>
 
