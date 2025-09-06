@@ -7,7 +7,7 @@ const mainCard=(
 
   <Card>
     <CardContent>
-      <h1>🎉🎉🎉YOU Discovered There!🎉🎉🎉</h1>
+      <h1>🎉YOU Discovered There!🎉</h1>
       <p>你好，我是LimitZ_！</p>
       <p>这里——limitz.top，是有关我的部分网站导航页，同时也作为个人自我介绍所用的单页网站。
         <br />
