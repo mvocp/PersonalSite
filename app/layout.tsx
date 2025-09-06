@@ -47,6 +47,7 @@ const navBarD = (
 >
 <Link href="/"><Button variant="text" >主页</Button></Link>
 <Link href="/blog/"><Button variant="text" >博客</Button></Link>
+<Link href="/link/"><Button variant="text" >友情链接</Button></Link>
 <Link href="https://github.com/mvocp"><Button variant="text" >Github</Button></Link>
 <Link href="http://mvocp.ysepan.com/"><Button variant="text" >资源网盘</Button></Link>
 <Link href="/want/"><Button variant="text" >碎碎念</Button></Link>
