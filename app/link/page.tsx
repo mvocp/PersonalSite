@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 // 在服务器端获取数据
     function getLinksData() {
-    // 在 Next.js 13+ 中，可以使用文件系统读取，但要注意路径
     const fs = require('fs');
     const path = require('path');
     const yaml = require('yaml');
