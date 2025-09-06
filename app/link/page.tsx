@@ -25,7 +25,7 @@ import Link from 'next/link';
 
     return items.map(item => (
         <div key={item.name || item.url}>
-            <Link href={item.url}>
+            <Link href={item.url} target='_blank'>
             <Card>
         <CardHeader
             avatar={
