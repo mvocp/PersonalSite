@@ -2,7 +2,7 @@ import Link from 'next/link';
 import {Card,CardContent,Typography,ToggleButton,ToggleButtonGroup} from '@mui/material'
 
 async function getPostsData(page = 1) {
-  const res = await fetch(`http://${process.env.VERCEL_URL || 'localhost:3000'}/api/posts?page=${page}`, {
+  const res = await fetch(`http://limitz.top || 'localhost:3000'}/api/posts?page=${page}`, {
     // 缓存
     next: { revalidate: 300 }
   });
