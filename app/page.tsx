@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './main.css';
+import Divider from '@mui/material/Divider';
 
 const mainCard=(
 
@@ -10,7 +11,7 @@ const mainCard=(
         <br />
         网站使用next.js构建，本网站将随着我对Typescript和React的学习而更新……算是某种意义上的“电子宠物”对吧？
       </p>
-      <hr />
+      <Divider />
       <h3>关于我 ：</h3>
       <p>我是一名中国的高中生，一名理科生。目前我正在学习Typescript和React（Next.js），已经掌握的语言有PHP。
         <br />
@@ -21,11 +22,10 @@ const mainCard=(
         我用了两年255650.xyz，于2025年改启用limitz.top，这两个域名都会一直续费，直到我失去做网站的兴趣。
         <br></br>
         想说的也就这么多了，希望你可以去我的博客看看。
-        本网站尽力遵循SPA设计原则。
+        本网站尽力遵循SPA设计原则。<br />
         THANK YOU.
         <br />
-        <p className='colorRed'>有一个很糟糕的事，本站移动端适配比较烂，有一部分导航在屏幕外，麻烦请您自行滑动。</p>
-      </p>
+              </p>
               <br />
         <h3>Contact :</h3>
         <p>你可以通过Email/QQ的方式直接联系我。</p>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Container, Avatar, Card, CardHeader, Stack} from '@mui/material';
 import Link from 'next/link';
+import Divider from '@mui/material/Divider';
 
 // 在服务器端获取数据
     function getLinksData() {
@@ -48,7 +49,7 @@ export default function blog(){
     <div>
 
         <h1>友情链接，我的朋友们</h1>
-        <hr />
+        <Divider />
                         
                             <Stack
                     direction="row"

@@ -78,7 +78,7 @@ export default function RootLayout({
             </CardContent>
           </Card>
           </div>
-        <small> © 2020-2025 LimitZ_'s Space.建站五年纪念(2025) <a href="https://github.com/mvocp/PersonalSite">Github Repo.</a></small>
+        <small> © 2020-2025 LimitZ_'s Space.建站五年纪念(2025) <a href="https://github.com/mvocp/PersonalSite">站点已在Github开源.</a></small>
         </Container>
       </body>
     </html>

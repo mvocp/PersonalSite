@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, CardContent} from '@mui/material';
+import Divider from '@mui/material/Divider';
 import Link from 'next/link';
 
 const mainCard=(
@@ -8,7 +8,7 @@ const mainCard=(
 
 
       <h1>🔰Xynx-Project🔰</h1>
-      <hr />
+      <Divider />
     <p>XynxWander-Project是由Satell1te_LK发起的，和他的朋友一起实现奇奇怪怪的想法的计划。<br />
     部分项目的代码会开源在XynxWander的Github Organization中。</p>
 
