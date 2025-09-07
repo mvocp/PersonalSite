@@ -5,6 +5,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { Container, AppBar, Toolbar, Typography, Stack, Divider, Button, Card, CardContent, Avatar } from '@mui/material';
 import Link from 'next/link';
+import './main.css';
 
 export const metadata: Metadata = {
   title: "I'm LimitZ_",
@@ -43,17 +44,17 @@ const navBarD = (
 <Stack
   direction="row"
   divider={<Divider orientation="vertical" flexItem />}
-  spacing={2}
+  spacing={0}
   sx={{ flexWrap: 'wrap' }}
 >
-<Link href="/"><Button variant="text" >主页</Button></Link>
-<Link href="/blog/"><Button variant="text" >博客</Button></Link>
-<Link href="/link/"><Button variant="text" >友情链接</Button></Link>
-<Link href="/want/"><Button variant="text" >碎碎念</Button></Link>
-<Link href="/xynx/"><Button variant="text" >Xynx项目</Button></Link>
+<Link href="/"><Button variant="contained">主页</Button></Link>
+<Link href="/blog/"><Button variant="contained">博客</Button></Link>
+<Link href="/link/"><Button variant="contained">友情链接</Button></Link>
+<Link href="/want/"><Button variant="contained">碎碎念</Button></Link>
+<Link href="/xynx/"><Button variant="contained">Xynx项目</Button></Link>
 
-<Link href="https://github.com/mvocp"><Button variant="text" >Github</Button></Link>
-<Link href="http://mvocp.ysepan.com/"><Button variant="text" >资源网盘</Button></Link>
+<Link href="https://github.com/mvocp"><Button variant="contained">Github</Button></Link>
+<Link href="http://mvocp.ysepan.com/"><Button variant="contained">资源网盘</Button></Link>
 
 </Stack>
   </div>

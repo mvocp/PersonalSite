@@ -1,9 +1,10 @@
     // app/blog/[slug]/page.js
     import { notFound } from 'next/navigation';
     import yaml from 'js-yaml';
-    import { Divider,Container } from '@mui/material';
+    import { Divider} from '@mui/material';
     import MarkdownRenderer from '@/components/markdown-renderer';
 
+    import {Waline} from '@/components/comment';
 
     async function getPostData(slug) {
     // 先获取索引找到文章slug
@@ -52,16 +53,8 @@
         </article>
         <Divider />
         {/* waline here */}
-        <small>如果您没有看到评论系统，请刷新页面……这是因为我懒得修复该问题。</small>
         <div id="waline"></div>
-        <script type="module">{`
-        import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-        init({
-        el: '#waline',
-        serverURL: 'https://comment.api.limitz.top',
-        });
-
-        `}</script>
+        <Waline serverURL={'https://comment.api.limitz.top'} path={post.slug}></Waline>
         {/* waline end */}
 
         </div>

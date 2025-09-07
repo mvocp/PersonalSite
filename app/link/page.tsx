@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Container, Avatar, Card, CardHeader, Stack} from '@mui/material';
 import Link from 'next/link';
 import Divider from '@mui/material/Divider';
+import {Waline} from '@/components/comment';
 
 // 在服务器端获取数据
     function getLinksData() {
@@ -42,9 +43,9 @@ import Divider from '@mui/material/Divider';
     ));
     }
 
+
 export default function blog(){
     const linksData = getLinksData();
-
     return (
     <div>
 
@@ -84,15 +85,9 @@ export default function blog(){
         <Divider />
         {/* waline here */}
         <div id="waline"></div>
-        <script type="module">{`
-        import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-        init({
-        el: '#waline',
-        serverURL: 'https://comment.api.limitz.top',
-        });
-
-        `}</script>
+        <Waline serverURL={'https://comment.api.limitz.top'} path='/link'></Waline>
+        
         {/* waline end */}
     </div>
-  );
+    );
 }

@@ -1,11 +1,10 @@
 import * as React from 'react';
-import './main.css';
 import Divider from '@mui/material/Divider';
 
 const mainCard=(
 
 <div>
-      <h1>🎉YOU Discovered There!🎉</h1>
+      <h1>CODE, BREAK, SELF, LIFE.</h1>
       <p>你好，我是LimitZ_！</p>
       <p>这里——limitz.top，是有关我的部分网站导航页，同时也作为个人自我介绍所用的单页网站。
         <br />
@@ -25,6 +24,7 @@ const mainCard=(
         本网站尽力遵循SPA设计原则。<br />
         THANK YOU.
         <br />
+        <p>网站移动端适配有点问题，但是我不是很喜欢sidebar设计，所以不改了。</p>
               </p>
               <br />
         <h3>Contact :</h3>

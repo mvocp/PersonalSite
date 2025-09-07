@@ -12,6 +12,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@fontsource/roboto": "^5.2.6",
+    "@montagejs/react-waline-client": "^0.1.11",
     "@mui/icons-material": "^7.3.2",
     "@mui/material": "^7.3.2",
     "mdx-bundler": "^10.1.1",
@@ -23,6 +24,7 @@
     "react-markdown": "^10.1.0",
     "rehype-highlight": "^7.0.2",
     "remark-gfm": "^4.0.1",
+    "waline": "^0.0.1",
     "yaml": "^2.8.1"
   },
   "devDependencies": {
@@ -30,6 +32,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@waline/client": "^3.6.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.2",
     "typescript": "^5"
