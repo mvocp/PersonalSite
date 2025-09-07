@@ -57,7 +57,7 @@
         import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
         init({
         el: '#waline',
-        serverURL: 'https://waline.255650.xyz',
+        serverURL: 'https://comment.api.limitz.top',
         });
 
         `}</script>
