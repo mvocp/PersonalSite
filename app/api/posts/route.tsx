@@ -47,26 +47,13 @@
         const posts = await Promise.all(
         pageItems.map(async (item) => {
             try {
-            const contentUrl = `https://blog-posts.api.limitz.top/posts/${item.slug}.mdx`;
-            const contentResponse = await fetch(contentUrl, {
-                next: { revalidate: 300 }
-            });
-            
-            if (!contentResponse.ok) {
-                throw new Error(`Failed to fetch content`);
-            }
-            
-            const content = await contentResponse.text();
-            
             return {
-                ...item,
-                content,
+                ...item
             };
             } catch (error) {
             console.error(`Error loading post`, error);
             return {
                 ...item,
-                content: '## 内容加载失败...',
                 error: true
             };
             }

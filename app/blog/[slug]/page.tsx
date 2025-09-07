@@ -5,7 +5,7 @@
 
     async function getPostData(slug) {
     // 先获取索引找到文章slug
-    const indexRes = await fetch('https://blog-posts.api.limitz.top/index.yml');
+    const indexRes = await fetch('http://blog-posts.api.limitz.top/index.yml');
     const indexText = await indexRes.text();
     const index = yaml.load(indexText);
     
