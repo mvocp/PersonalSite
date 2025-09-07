@@ -52,6 +52,7 @@
         </article>
         <Divider />
         {/* waline here */}
+        <small>如果您没有看到评论系统，请刷新页面……这是因为我懒得修复该问题。</small>
         <div id="waline"></div>
         <script type="module">{`
         import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';

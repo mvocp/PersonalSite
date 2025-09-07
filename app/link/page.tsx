@@ -80,7 +80,7 @@ export default function blog(){
         </Container>
             联系方式：发送邮件至<em>i@limitz.top</em>，或者联系QQ：<em>66870019</em>
             <br />
-            更新：您现在可以在本页下面留言了。
+            更新：您现在可以在本页下面留言了。<small>如果您没有看到评论系统，请刷新页面……这是因为我懒得修复该问题。</small>
         <Divider />
         {/* waline here */}
         <div id="waline"></div>
