@@ -79,7 +79,20 @@ export default function blog(){
             <li>Avatar: https://q1.qlogo.cn/g?b=qq&nk=66870019&s=100</li>
         </Container>
             联系方式：发送邮件至<em>i@limitz.top</em>，或者联系QQ：<em>66870019</em>
-                
+            <br />
+            更新：您现在可以在本页下面留言了。
+        <Divider />
+        {/* waline here */}
+        <div id="waline"></div>
+        <script type="module">{`
+        import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+        init({
+        el: '#waline',
+        serverURL: 'https://waline.255650.xyz',
+        });
+
+        `}</script>
+        {/* waline end */}
     </div>
   );
 }

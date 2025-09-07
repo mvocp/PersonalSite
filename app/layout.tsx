@@ -9,6 +9,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: "I'm LimitZ_",
   description: "限界，突破，自我。",
+  
 };
 
 const headbarD = (
@@ -48,10 +49,11 @@ const navBarD = (
 <Link href="/"><Button variant="text" >主页</Button></Link>
 <Link href="/blog/"><Button variant="text" >博客</Button></Link>
 <Link href="/link/"><Button variant="text" >友情链接</Button></Link>
-<Link href="https://github.com/mvocp"><Button variant="text" >Github</Button></Link>
-<Link href="http://mvocp.ysepan.com/"><Button variant="text" >资源网盘</Button></Link>
 <Link href="/want/"><Button variant="text" >碎碎念</Button></Link>
 <Link href="/xynx/"><Button variant="text" >Xynx项目</Button></Link>
+
+<Link href="https://github.com/mvocp"><Button variant="text" >Github</Button></Link>
+<Link href="http://mvocp.ysepan.com/"><Button variant="text" >资源网盘</Button></Link>
 
 </Stack>
   </div>
@@ -65,6 +67,10 @@ export default function RootLayout({
   return (
     <html lang="zh">
       <body>
+          <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+  />
       <script defer src="https://umami.imxb.de/script.js" data-website-id="48f86595-15d4-4cb8-9ab7-86b6a8483e0b"></script>
         {headbarD}
         <br></br>
@@ -74,7 +80,9 @@ export default function RootLayout({
           <div>
           <Card>
             <CardContent>
+              <Container>
             {children}
+              </Container>
             </CardContent>
           </Card>
           </div>

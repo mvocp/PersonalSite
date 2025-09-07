@@ -4,6 +4,7 @@
     import { Divider,Container } from '@mui/material';
     import MarkdownRenderer from '@/components/markdown-renderer';
 
+
     async function getPostData(slug) {
     // 先获取索引找到文章slug
     const indexRes = await fetch('https://blog-posts.api.limitz.top/index.yml');
@@ -36,7 +37,6 @@
     
     return (
         <div>
-            <Container>
         <article>
             <h1>{post.title}</h1>
             <time>
@@ -50,12 +50,30 @@
             ></MarkdownRenderer>
             </div>
         </article>
-            </Container>
+        <Divider />
+        {/* waline here */}
+        <div id="waline"></div>
+        <script type="module">{`
+        import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+        init({
+        el: '#waline',
+        serverURL: 'https://waline.255650.xyz',
+        });
+
+        `}</script>
+        {/* waline end */}
+
         </div>
     );
     }
 
     // 生成静态参数
+            async function importRemoteModule(url: string) {
+        const module = await import(url);
+        // 使用导入的模块进行操作
+        }
+
+    
     export async function generateStaticParams() {
     const indexRes = await fetch('https://blog-posts.api.limitz.top/index.yml');
     const indexText = await indexRes.text();
