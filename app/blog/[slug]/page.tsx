@@ -2,6 +2,7 @@
     import { notFound } from 'next/navigation';
     import yaml from 'js-yaml';
     import { Divider,Container } from '@mui/material';
+    import MarkdownRenderer from '@/components/markdown-renderer';
 
     async function getPostData(slug) {
     // 先获取索引找到文章slug
@@ -19,7 +20,7 @@
     const contentUrl = `https://blog-posts.api.limitz.top/posts/${postMeta.slug}.mdx`;
     const contentRes = await fetch(contentUrl);
     const content = await contentRes.text();
-    
+
     return {
         ...postMeta,
         content
@@ -44,8 +45,9 @@
             <Divider />
             <br />
             <div>
-            {/* 渲染Markdown */}
+            <MarkdownRenderer content=
             {post.content}
+            ></MarkdownRenderer>
             </div>
         </article>
             </Container>
