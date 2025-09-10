@@ -23,9 +23,9 @@ const mainCard=(
         想说的也就这么多了，希望你可以去我的博客看看。
         本网站尽力遵循SPA设计原则。<br />
         THANK YOU.
-        <br />
+        <br /></p>
         <p>网站移动端适配有点问题，但是我不是很喜欢sidebar设计，所以不改了。</p>
-              </p>
+
               <br />
         <h3>Contact :</h3>
         <p>你可以通过Email/QQ的方式直接联系我。</p>

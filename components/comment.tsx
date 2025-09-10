@@ -30,6 +30,7 @@
 
     return (
     <div>
+        <br />
         <em>如果您没有看到评论系统，请刷新页面重试。</em>
         <div ref={containerRef} />
     </div>

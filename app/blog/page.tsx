@@ -43,7 +43,8 @@ export default async function BlogPage({ searchParams }) {
               </Typography>
             </CardContent>
           </Card>
-                </Link>      
+                </Link>
+                <br />      
             </article>
           ))}
         </div>
