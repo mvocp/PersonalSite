@@ -14,8 +14,12 @@ items:
   avatar: https://zeapi.ink/favicon.svg
   des: 只为提供专业的公共API服务集成平台
 
-- name: Virelyx
-  url: https://virelyx.com/
-  avatar: https://virelyx.com/Static/Avatar_Virelyx.png
-  des: 清醒独立，慎辨是非。
+- name: 南蛮子懋和
+  url: https://www.dao.js.cn/
+  avatar: https://cn.cravatar.com/avatar/37d41e2b550633a30f5d41de61c1aa92?s=400&r=G&d=mp&ver=1754413756
+  des: 李懋和，俗名李栋梁。书法、国画爱好者，互联网安全与前端建设者。
 
+- name: XiaoPang 的个人博客
+  url: https://blog.xpdbk.com 
+  avatar: https://img.xpdbk.com/file/imglol/img/avatar.jpg 
+  des: 追随梦想需竭尽全力
