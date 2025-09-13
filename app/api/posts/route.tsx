@@ -33,7 +33,7 @@
     export async function GET(request) {
     const { searchParams } = new URL(request.url);
     const page = parseInt(searchParams.get('page') || '1');
-    const pageSize = 10;
+    const pageSize = 5;
 
     try {
         const index = await loadPostIndex();
