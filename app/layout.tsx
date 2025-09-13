@@ -3,7 +3,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { Container, AppBar, Toolbar, Typography, Stack, Divider, Button, Card, CardContent, Avatar, Box, IconButton, SwipeableDrawer, Drawer} from '@mui/material';
+import { Container, AppBar, Toolbar, Typography, Stack, Divider, Button, Card, CardContent, Box, ThemeProvider, createTheme} from '@mui/material';
 import Link from 'next/link';
 import './main.css';
 import MainDrawer from  '@/components/drawerMain'
@@ -16,16 +16,15 @@ export const metadata: Metadata = {
   
 };
 
+// dark theme set up
+// test failed so i delete this block...
 
 
 // navbar component
 const headbarD = (
           <div>
-        <AppBar position='static'>
-
-          <Toolbar sx={{
-            justifyContent: {md: 'center'},
-          }}>
+        <AppBar position="static">
+          <Toolbar>
                       <Typography
               variant='h5'
               noWrap
@@ -34,21 +33,19 @@ const headbarD = (
               sx={{
               mr: 0,
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              letterSpacing: '.2rem',
               color: 'inherit',
               textDecoration: 'none',
-              
             }}
-            >LimitZ_&apos;s SPACE</Typography>
+            >LimitZ_&apos;s SPACE </Typography>
             {/* flexible navbar test */}
                       <Box sx={{display: {xs: 'none', md: 'flex'},}}>
                                 <Stack
             direction="row"
             spacing={1}
-            sx={{ flexWrap: 'wrap',
-              
-              }}
+            sx={{ flexWrap: 'wrap'}}
           >
+            <Divider orientation="vertical"/>
           <Link href="/"><Button variant="contained">主页</Button></Link>
           <Link href="/blog/"><Button variant="contained">博客</Button></Link>
           <Link href="/link/"><Button variant="contained">友情链接</Button></Link>
@@ -56,7 +53,6 @@ const headbarD = (
           <Link href="/xynx/"><Button variant="contained">Xynx项目</Button></Link>
           <Link href="https://github.com/mvocp"><Button variant="contained">Github</Button></Link>
           <Link href="http://mvocp.ysepan.com/"><Button variant="contained">资源网盘</Button></Link>
-
           </Stack>
           </Box>
 
@@ -66,7 +62,6 @@ const headbarD = (
                 <MainDrawer></MainDrawer>
                 
               </Box>
-
           </Toolbar>
       </AppBar>
 
@@ -90,6 +85,7 @@ export default function RootLayout({
   />
       <script defer src="https://umami.imxb.de/script.js" data-website-id="48f86595-15d4-4cb8-9ab7-86b6a8483e0b"></script>
       <div>
+        
         {headbarD}
         <br></br>
         <Container>
