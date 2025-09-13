@@ -34,7 +34,7 @@ export default async function BlogPage({ searchParams }) {
               <Typography variant="h5" component="div">
                 {post.title}
               </Typography>
-              <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>{post.date}</Typography>
+              <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>{new Date(post.date).toLocaleDateString('zh-CN')}</Typography>
               <Typography variant="body2">
                 {post.excerpt && (
                       post.excerpt
